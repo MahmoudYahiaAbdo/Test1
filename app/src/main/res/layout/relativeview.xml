@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/devider"
+    android:paddingRight="17dp"
+    android:paddingLeft="20dp"
+    android:paddingBottom="20dp"
+    android:paddingTop="20dp">
+    <ImageView
+        android:id="@+id/image"
+        android:layout_height="100dp"
+        android:layout_width="100dp"
+        android:layout_alignParentLeft="true"/>
+    <TextView
+        android:id="@+id/itemName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Item Name: "
+        android:layout_toRightOf="@id/image"
+        android:layout_marginLeft="10dp"
+        android:textStyle="bold"/>
+    <TextView
+        android:id="@+id/fabric"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Fabric: "
+        android:layout_toRightOf="@id/image"
+        android:layout_below="@+id/itemName"
+        android:layout_marginLeft="10dp"
+        android:textStyle="bold"/>
+    <TextView
+        android:id="@+id/colorAvailability"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Color Availability: "
+        android:layout_toRightOf="@id/image"
+        android:layout_below="@+id/fabric"
+        android:layout_marginLeft="10dp"
+        android:textStyle="bold"/>
+    <TextView
+        android:id="@+id/price"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Price: "
+        android:layout_toRightOf="@id/image"
+        android:layout_below="@+id/colorAvailability"
+        android:layout_marginLeft="10dp"
+        android:textStyle="bold"/>
+    <TextView
+        android:id="@+id/itemStatus"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Item Status: "
+        android:layout_toRightOf="@id/image"
+        android:layout_below="@+id/price"
+        android:layout_marginLeft="10dp"
+        android:textStyle="bold"
+        android:layout_marginTop="4dp"/>
+
+
+    <TextView
+        android:id="@+id/itemNameValue"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="item name"
+        android:layout_toRightOf="@id/itemName"/>
+    <TextView
+        android:id="@+id/fabricValue"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="fabric"
+        android:layout_toRightOf="@id/fabric"
+        android:layout_below="@+id/itemNameValue"/>
+    <TextView
+        android:id="@+id/colorAvailabilityValue"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="color availability"
+        android:layout_toRightOf="@id/colorAvailability"
+        android:layout_below="@+id/fabricValue"/>
+    <TextView
+        android:id="@+id/priceValue"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="price"
+        android:layout_toRightOf="@id/price"
+        android:layout_below="@+id/colorAvailabilityValue"/>
+
+    <Switch
+        android:id="@+id/itemStatusValue"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/priceValue"
+        android:layout_marginTop="0dp"
+        android:layout_toRightOf="@id/itemStatus"
+        android:paddingTop="0dp"
+        android:scaleX="0.8"
+        android:scaleY="0.8"
+        />
+
+    <Button
+        android:id="@+id/buttonx"
+        android:layout_width="wrap_content"
+        android:layout_height="33dp"
+        android:layout_alignBottom="@id/itemStatusValue"
+        android:layout_alignParentRight="true"
+        android:text="Edit Item"
+        android:textSize="10dp" />
+</RelativeLayout>
